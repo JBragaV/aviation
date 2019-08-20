@@ -4,19 +4,16 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Vagass
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
+    <ion-item floating *ngFor="let item of items">
+      {{item.title}}: <ion-input type="text"></ion-input>
+      <ion-button color="primary">Ver</ion-button>
     </ion-item>
   </ion-list>
   <!--
